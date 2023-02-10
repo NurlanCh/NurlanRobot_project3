@@ -14,12 +14,17 @@ ${vGenre}    M
 Test synchronisation
     ##   ${Attente1}=    Get Selenium Timeout
     ##   Log To Console    ${Attente1}
+
     ## Set Selenium Timeout    10
+
     ##     ${Attente1}=    Get Selenium Timeout
     ##     Log To Console    ${Attente1}
+
     #Set Selenium Speed    2
+
     #${Attente}=    Get Selenium Implicit Wait 
     #Log To Console    ${Attente}   
+    
     ### Set Selenium Implicit Wait    20
     When Selectionner un genre    ${vGenre}
     #Sleep    60
